@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            animation: rollingBall 5s linear infinite;
+            background: linear-gradient(to bottom, red, white);
+            border-radius: 50%;
+            height: 200px;
+            left: 80%;
+            top: 20%;
+            position: absolute;
+            width: 200px;
+        }
+
+        .box2 {
+            animation: rollingBall2 10s linear infinite;
+            background: linear-gradient(to bottom, purple, white);
+            border-radius: 50%;
+            height: 200px;
+            left: 60%;
+            top: 30%;
+            position: absolute;
+            width: 100px;
+            
+        }
+        .image {
+            animation: imagejpg 7s linear infinite;
+            border-radius: 40%;
+            height: 150px;
+            left: 30%;
+            top: 25%;
+            position: absolute;
+            width: 110px;
+        }
+        
+        .roundedCorners 
+        {border-radius: 50px;}
+           
+        
+        @keyframes rollingBall {
+            0% {
+                top: 20%;
+                transform: rotate(0deg);
+            }
+            50% {
+                top: 80%;
+                transform: rotate(-360deg);
+            }
+            100% {
+                top: 20%;
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes rollingBall2 {
+            0% {
+                left: 20%;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 80%;
+                transform: rotate(-360deg);
+            }
+            100% {
+                left: 20%;
+                transform: rotate(0deg);
+        }
+        }
+        @keyframes imagejpg {
+            0% {
+                left: 10%;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 80%;
+                transform: rotate(-360deg);
+            }
+            100% {
+                left: 10%;
+                transform: rotate(0deg);
+            }
+            
+            
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="image"><img class="roundedCorners" src="image.jpg"></img>=</div>
+</body>
+
+</html>
